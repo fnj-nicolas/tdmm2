@@ -1,0 +1,361 @@
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  background-color: #0000002E;
+  padding-inline: 1vw;
+  padding: .5vw;
+
+}
+.contenedor1{
+  width: 100%;
+  height: 57vw;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+
+}
+.contenedor2{
+  background-color: #353434;
+  }
+.row{
+  padding: 5%;
+  text-align: center;
+}
+.title{
+  padding-top: 0px;
+  width: 39vw;
+  height: 0vw;
+  margin-top: 1vw;
+  margin-left: 23px;
+  font-size: 5vw;
+  color: white;
+  text-align:left;
+}
+.subTitle{
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 4vw;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 15vw;
+  width: 35vw;
+  margin-left: 25px;
+}
+.subTitle3{
+  font-size: 2.6vw;
+  color: white;
+  margin-block-end: 4vw;
+}
+.card{
+  background: #FFFFFFE3;
+  border-radius: 4px;
+  margin:5vw;
+  width: 32;
+  margin-left: 15vw;
+  height: 32vw;
+}
+.contCard{
+  margin: 3vw;
+  width: 22vw;
+  height: 26vw;
+}
+.btnContinuarFix{
+  text-align: right;
+}
+.btnContinuar{
+  background-color: #1473e6;
+  border-color: #1473e6;
+  color: #fff;
+  border-radius: 2vw;
+  font-size: 1vw;
+  font-weight: 700;
+  border-style: solid;
+  width: 100%;
+  padding: 1vw;
+}
+.cardFont{
+  font-size: 3vw;
+  color: #323232;
+}
+.marginForm{
+  margin-block: 2vw;
+  font-size: 1vw;
+}
+.modMail{
+  height: 2vw;
+  padding-top: 1vw;
+  width: 100%;
+  background-color: #FFF0;
+  border-color: #999;
+  border-radius: 0;
+  border-width: 0 0 1px;
+  padding-left: 0;
+  padding-right: 0;
+  resize: none;
+  overflow-y: hidden;
+  color: #dbb41c;
+}
+.title2{
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-block-end:5vw;
+}
+.flexBox{
+  display: flex;
+}
+.subTitle2{
+  font-size: 1.4vw;
+  font-weight: 400;
+  letter-spacing: -0.019em;
+}
+.right{
+  display: inline-flex;
+  display: ruby-text-container;
+}
+.aMargin{
+  width: 50vw;
+  margin-inline:9vw;
+}
+.aImg{
+  margin-block: 2vw;
+  height: 100%;
+  width: 100%;
+  margin-inline: 2vw;
+}
+.contentDer{
+  display: flex;
+  justify-content: flex-end;
+  color: #505763;
+  flex-basis: 46%;
+}
+.btnInicio{
+  float: right;
+  line-height: 1;
+  background-color: #1473e600;
+  color: #fff;
+  border-radius: 16px;
+  min-height: 32px;
+  padding: 3.5px 14px 4.5px;
+  font-size: 14px;
+  font-weight: 700;
+  border-style: solid;
+}
+.marginImg{
+  width: 24vw;
+  margin-inline: 3vw;;
+}
+.btnVerMas{
+  background-color: #1473e600;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5vw;
+  border-style: solid;
+  font-size: 1.2vw;
+  padding-block: 1vw;
+  padding-inline: 2vw;
+  margin-top: 4vw;
+}
+
+@media only screen and (max-width: 768px){
+
+.flexBox{
+  display: unset;
+}
+.header{
+  padding-inline: 5%;
+  padding-top: 2%;
+}
+.row{
+  padding: 5%;
+  text-align: center;
+
+}
+.title{
+  margin-top: 19vw;
+  margin-bottom: 20vw;
+  height: 27vw;
+  width: 95vw;
+  font-size: 10vw;
+  color: white;
+  text-align: left;
+  margin-left: 0px;
+}
+.subTitle{
+  color: white;
+  font-size: 8vw;
+  width: 90vw;
+  font-weight: 500;
+  margin-bottom: 4vw;
+  margin-top: 21vw;
+  line-height: 1.2;
+  text-align: left;
+  margin-left: 0px;
+}
+.cardFont{
+  font-size: 8vw;
+  color: #323232;
+  margin-bottom: 10vw;
+}
+.aMargin{
+  width: unset;
+  margin-inline: 8vw;
+}
+.aImg{
+  width: 90%;
+  margin-block: 20vw;
+  margin-inline: 5vw;
+  height: 50%;
+}
+.title2{
+  font-weight: 200;
+  font-size: 8vw;
+  margin-bottom: 10vw;
+  margin-top: 10vw;
+}
+.subTitle2{
+  font-weight: 300;
+  letter-spacing: -0.018em;
+  line-height: 1.1;
+  font-size: 4.5vw;
+  margin-bottom: 11vw;
+  margin-top: 11vw;
+}
+.subTitle3{
+  font-weight: 200;
+  letter-spacing: -0.018em;
+  line-height: 1.1;
+  font-size: 6.5vw;
+  margin-bottom: 11vw;
+  color: white;
+  margin-inline:1vw;
+}
+.marginImg{
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+  width: 84vw;
+}
+.contenedor1{
+  background-color: grey;
+  height: 311vw;
+  width: 100%;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.btnContinuarFix{
+  text-align: right;
+  padding-top: 10vw;
+}
+.contenedor2{
+  background-color: #353434;
+  }
+.card{
+  background: #E5E5E5E3;
+  border-radius: 4px;
+  margin:5vw;
+  margin-top: 18vw;
+  width: unset;
+  height: 118vw;
+}
+.marginForm {
+    margin-block: 11vw;
+    font-size: 3vw;
+}
+.contCard{
+  padding: 10vw;
+  width: auto;
+  margin: auto;
+}
+.modMail{
+  height: 28px;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 16px;
+  width: 100%;
+  background-color: #FFF0;
+  border-color: #999;
+  border-radius: 0;
+  border-width: 0 0 1px;
+  padding-left: 0;
+  padding-right: 0;
+  resize: none;
+  overflow-y: hidden;
+  color: #dbb41c;
+}
+.btnContinuar{
+  background-color: #1473e6;
+  border-color: #1473e6;
+  color: #fff;
+  border-radius: 5vw;
+  min-height: 10vw;
+  font-size: 4vw;
+  font-weight: 700;
+  border-style: solid;
+  margin-block: 7vw;
+}
+
+.btnVerMas{
+  background-color: #1473e600;
+  color: #fff;
+  font-weight: 700;
+  border-style: solid;
+  font-size: 3.2vw;
+  padding-block: 1vw;
+  padding-inline: 2vw;
+  margin-block: 7vw;
+}
+.flexContenido{
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: solid 1px #e8e9eb;
+  cursor: pointer;
+  height: auto;
+  margin-top: 3px;
+  padding: 10px 13px 10px 22px;
+}
+.contentIzq{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color: #505763;
+  flex: 1 1 auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+.plusIcon{
+  color: #0087ff;
+  display: inline-block;
+  width: 12px;
+  height: auto !important;
+}
+.contentDer{
+  display: none;
+}
+.cantLec{
+  display: block;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+.timeCurso{
+  text-align: right;
+  width: 47%;
+}
+.btnMas {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    background-color: rgb(249, 249, 249);
+    border: solid 1px #e8e9eb;
+    cursor: pointer;
+    height: auto;
+    margin-top: 3px;
+    padding: 10px 30px 10px 22px;
+}
+
+}
