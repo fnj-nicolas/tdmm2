@@ -7,8 +7,7 @@ body {
 
 .header{
   background-color: #0000002E;
-  padding-inline: 1vw;
-  padding: .5vw;
+  padding: 0vw 1vw 0vw 1vw;;
 
 }
 .contenedor1{
@@ -18,11 +17,18 @@ body {
   background-size: cover;
 
 }
+.logo{
+  margin: 0vw 0vw 0vw 1.5vw;
+  width: 9vw;
+  height: 4vw;
+}
 .contenedor2{
   background-color: #353434;
+  text-align: center;
+  padding: 2vw;
   }
 .row{
-  padding: 5%;
+  padding: 5vw;
   text-align: center;
 }
 .title{
@@ -34,6 +40,21 @@ body {
   font-size: 5vw;
   color: white;
   text-align:left;
+}
+.modComprar{
+  margin: 1vw 5vw 1vw 10vw;
+}
+.btnComprar{
+  margin: 1vw 0vw 2vw 0vw;
+    background-color: #1473e6;
+    border-color: #1473e6;
+    color: #fff;
+    border-radius: 8vw;
+    font-size: 1vw;
+    font-weight: 700;
+    border-style: solid;
+    width: 18vw;
+    padding: 1vw;
 }
 .subTitle{
   color: white;
@@ -55,7 +76,7 @@ body {
   background: #FFFFFFE3;
   border-radius: 4px;
   margin:5vw;
-  width: 32;
+  width: 32vw;
   margin-left: 15vw;
   height: 32vw;
 }
@@ -64,10 +85,8 @@ body {
   width: 22vw;
   height: 26vw;
 }
-.btnContinuarFix{
-  text-align: right;
-}
 .btnContinuar{
+  margin: 2vw 0vw 2vw 0vw;
   background-color: #1473e6;
   border-color: #1473e6;
   color: #fff;
@@ -78,17 +97,19 @@ body {
   width: 100%;
   padding: 1vw;
 }
+
+
 .cardFont{
   font-size: 3vw;
   color: #323232;
 }
 .marginForm{
-  margin-block: 2vw;
+  margin: 2vw 0vw 2vw 0vw;
   font-size: 1vw;
 }
 .modMail{
+  margin: 1vw 0vw 2vw 0vw;
   height: 2vw;
-  padding-top: 1vw;
   width: 100%;
   background-color: #FFF0;
   border-color: #999;
@@ -98,7 +119,8 @@ body {
   padding-right: 0;
   resize: none;
   overflow-y: hidden;
-  color: #dbb41c;
+  color: #3a3936;
+  font-size: 1vw;
 }
 .title2{
   font-size: 2.5vw;
@@ -114,18 +136,35 @@ body {
   letter-spacing: -0.019em;
 }
 .right{
-  display: inline-flex;
-  display: ruby-text-container;
+  display: inline;
 }
 .aMargin{
   width: 50vw;
-  margin-inline:9vw;
+  margin: 2vw 9vw 2vw 9vw;
 }
 .aImg{
-  margin-block: 2vw;
+  margin: 2vw 2vw 2vw 2vw;
   height: 100%;
   width: 100%;
-  margin-inline: 2vw;
+}
+.CourseContent{
+  width: 47vw;
+  margin: 0vw 4vw 0vw 1vw;
+}
+.flexContenido{
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: solid 1px #e8e9eb;
+  cursor: pointer;
+  height: auto;
+  margin-top: 3px;
+  padding: 1vw;
+  font-size: 1vw
+}
+.timeCurso{
+  text-align: right;
+  width: 47%;
 }
 .contentDer{
   display: flex;
@@ -133,21 +172,50 @@ body {
   color: #505763;
   flex-basis: 46%;
 }
+.fontSizeCourseContent{
+  font-size: 1vw;
+    margin: 2vw 1vw 2vw 1vw;
+}
+.tituloCourseCont{
+  font-size: 2vw;
+    margin: 1vw 1vw 3vw 1vw;
+}
+.contentIzq{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color: #505763;
+  flex: 1 1 auto;
+  font-weight: 600;
+}
+.btnMas {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    background-color: rgb(249, 249, 249);
+    border: solid 1px #e8e9eb;
+    cursor: pointer;
+    height: auto;
+    margin-top: 3px;
+    padding: 1vw 19vw 1vw 19vw;
+    font-size: 1vw;
+}
 .btnInicio{
   float: right;
   line-height: 1;
   background-color: #1473e600;
   color: #fff;
-  border-radius: 16px;
-  min-height: 32px;
-  padding: 3.5px 14px 4.5px;
-  font-size: 14px;
+  border-radius: 5vw;
+  min-height: 2.5vw;
+  padding: .5vw 1vw .5vw 1vw;
+  font-size: 1vw;
   font-weight: 700;
   border-style: solid;
+  margin: 1vw 1vw 0vw 0vw;
 }
 .marginImg{
   width: 24vw;
-  margin-inline: 3vw;;
+  margin: 0vw 4vw 0vw 3vw;
 }
 .btnVerMas{
   background-color: #1473e600;
@@ -156,45 +224,161 @@ body {
   border-radius: 5vw;
   border-style: solid;
   font-size: 1.2vw;
-  padding-block: 1vw;
-  padding-inline: 2vw;
+  padding: 1vw 2vw 1vw 2vw;
   margin-top: 4vw;
+}
+.precio{
+  font-size: 2vw;
+  margin: 1vw;
+}
+.descuento{
+  font-size: 1vw;
+  vertical-align: middle;
+  color: #f02d00;
+}
+li {
+    padding: 1vw 1vw 0vw 1vw;
+    list-style: none;
+    text-align: start;
+}
+ul{
+  width: 18vw;
+  margin: 0vw 2vw 0vw 0vw;
+}
+.ico{
+  vertical-align: sub;
+    padding: 1vw 1vw 0.2vw 0vw;
+    margin: -1px;
+    width: 1.2vw;
+    height: 1vw;
+}
+.descuentoP{
+  font-size: 1vw;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #f02d00;
+}
+.valorCard{
+  margin: 4vw 1vw 4vw 8vw;
+  text-align: center;
+  display: grid;
+  width: 22vw;
+  background-color: #1473e600;
+  border-radius: 1vw;
+  border-style: solid;
+  border-color: #d4d4d4;
+  border-width: thin;
+  font-size: 1vw;
+}
+.ValorImg{
+  border-radius: 50%;
+  width: 6vw;
+  margin: 2vw 8vw 1vw 8vw;
+}
+.valorTxt{
+  margin: 2vw 3vw 2vw 3vw;
+  font-size: 1vw;
+}
+.marcasImg{
+  width: auto;
+  margin: 3vw 2vw 3vw 2vw;
+  height: 5vw;
+}
+.subTitle4{
+  font-size: 1.5vw;
+  color: white;
+}
+.textValor{
+  font-size: 1.7vw;
+  margin: 4vw 1vw 0vw 1vw;
+}
+.masValor{
+  font-size: 1vw;
+    color: blue;
+}
+.suscripcion{
+  background-color: white;
+  width: 29vw;
+  height: 20vw;
+  margin: 9vw 0vw 15vw 32vw;
+  border-radius: 1%;
+  padding: 5vw 5vw 5vw 5vw;
+}
+
+.pantallaMensaje {
+    background-color: #efefef8a;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: none;
+    text-align: center;
+}
+.btnRegresar{
+  background-color: #1473e6;
+      border-color: #1473e6;
+      color: #fff;
+      border-radius: 5vw;
+      font-size: 1vw;
+      font-weight: 700;
+      border-style: solid;
+      margin: 1vw 0vw 0vw 0vw;
+      padding: 1vw 0vw 1vw 0vw;
+      width: 9vw;
+      text-align: center;
 }
 
 @media only screen and (max-width: 768px){
 
 .flexBox{
-  display: table-cell;
+  display: block;
 }
 .header{
-  padding-inline: 5%;
-  padding-top: 2%;
+  padding: 0vw 3vw 0vw 3vw;
+}
+.logo {
+  margin: 2.3vw 0vw 2vw 3vw;
+  width: 33vw;
+  height: 10vw;
+
+}
+.btnInicio{
+  float: right;
+  line-height: 1;
+  background-color: #1473e600;
+  color: #fff;
+  border-radius: 5vw;
+  min-height: 2.5vw;
+  padding: 2.5vw 3vw 2.5vw 3vw;
+  font-size: 4vw;
+  font-weight: 700;
+  border-style: solid;
+  margin: 2.5vw 2vw 0vw 0vw;
 }
 .row{
-  padding: 5%;
+  padding: 1vw 2vw 2vw 4vw;
   text-align: center;
 
 }
 .title{
-  margin-top: 19vw;
-  margin-bottom: 20vw;
+  margin: 12vw 0vw 0vw 0vw;
   height: 27vw;
   width: 95vw;
   font-size: 10vw;
   color: white;
   text-align: left;
-  margin-left: 0px;
 }
 .subTitle{
   color: white;
   font-size: 8vw;
-  width: 90vw;
+  width: 80vw;
   font-weight: 500;
-  margin-bottom: 4vw;
-  margin-top: 21vw;
+  margin: 21vw 0vw 12vw 0vw;
   line-height: 1.2;
   text-align: left;
-  margin-left: 0px;
 }
 .cardFont{
   font-size: 8vw;
@@ -202,20 +386,21 @@ body {
   margin-bottom: 10vw;
 }
 .aMargin{
-  width: unset;
-  margin-inline: 8vw;
+  margin: 8vw 3vw 8vw 3vw;
+  width: auto;
 }
 .aImg{
   width: 90%;
-  margin-block: 20vw;
-  margin-inline: 5vw;
+  margin: 20vw 5vw 20vw 5vw;
   height: 50%;
 }
 .title2{
   font-weight: 200;
   font-size: 8vw;
-  margin-bottom: 10vw;
-  margin-top: 10vw;
+  margin: 10vw 1vw 10vw 1vw;
+}
+.modComprar{
+  margin: 4vw 10vw 1vw 8vw;
 }
 .subTitle2{
   font-weight: 300;
@@ -232,7 +417,6 @@ body {
   font-size: 6.5vw;
   margin-bottom: 11vw;
   color: white;
-  margin-inline:1vw;
 }
 .marginImg{
   margin-top: 5vw;
@@ -247,9 +431,11 @@ body {
   background-size: cover;
   background-position: center center;
 }
-.btnContinuarFix{
-  text-align: right;
-  padding-top: 10vw;
+.descuentoP {
+    font-size: 7vw;
+    vertical-align: middle;
+    text-decoration: line-through;
+    color: #f02d00;
 }
 .contenedor2{
   background-color: #353434;
@@ -263,8 +449,8 @@ body {
   height: 118vw;
 }
 .marginForm {
-    margin-block: 11vw;
-    font-size: 3vw;
+    margin: 8vw 0vw 8vw 0vw;
+    font-size: 4vw;
 }
 .contCard{
   padding: 10vw;
@@ -275,7 +461,7 @@ body {
   height: 28px;
   padding-bottom: 0;
   padding-top: 0;
-  font-size: 16px;
+  font-size: 3.5vw;
   width: 100%;
   background-color: #FFF0;
   border-color: #999;
@@ -285,7 +471,12 @@ body {
   padding-right: 0;
   resize: none;
   overflow-y: hidden;
-  color: #dbb41c;
+  color: #404040;
+  margin: 5vw 0vw 5vw 0vw;
+}
+.tituloCourseCont {
+    font-size: 6vw;
+    margin: 6vw 1vw 4vw 1vw;
 }
 .btnContinuar{
   background-color: #1473e6;
@@ -296,7 +487,32 @@ body {
   font-size: 4vw;
   font-weight: 700;
   border-style: solid;
-  margin-block: 7vw;
+  margin: 7vw 0vw 7vw 0vw;
+}
+.btnRegresar {
+    background-color: #1473e6;
+    border-color: #1473e6;
+    color: #fff;
+    border-radius: 15vw;
+    min-height: 10vw;
+    font-size: 4vw;
+    font-weight: 700;
+    border-style: solid;
+    margin: 7vw 0vw 7vw 0vw;
+    padding: 7vwe 6vw 2vw 1vw;
+    width: 32vw;
+}
+.btnComprar{
+  margin: 1vw 0vw 2vw 0vw;
+  background-color: #1473e6;
+  border-color: #1473e6;
+  color: #fff;
+  border-radius: 6vw;
+  font-size: 5vw;
+  font-weight: 700;
+  border-style: solid;
+  width: 100%;
+  padding: 3vw;
 }
 
 .btnVerMas{
@@ -304,10 +520,9 @@ body {
   color: #fff;
   font-weight: 700;
   border-style: solid;
-  font-size: 3.2vw;
-  padding-block: 1vw;
-  padding-inline: 2vw;
-  margin-block: 7vw;
+  font-size: 4vw;
+  padding: 2vw 3vw 2vw 3vw;
+  margin: 8vw;
 }
 .flexContenido{
   display: flex;
@@ -317,7 +532,8 @@ body {
   cursor: pointer;
   height: auto;
   margin-top: 3px;
-  padding: 10px 13px 10px 22px;
+  padding: 5vw 1vw 1vw 1vw;
+  font-size: 5vw;
 }
 .contentIzq{
   flex-direction: row;
@@ -325,7 +541,6 @@ body {
   align-items: center;
   color: #505763;
   flex: 1 1 auto;
-  font-size: 18px;
   font-weight: 600;
 }
 .plusIcon{
@@ -333,6 +548,15 @@ body {
   display: inline-block;
   width: 12px;
   height: auto !important;
+}
+.descuento{
+  font-size: 5vw;
+  vertical-align: middle;
+  color: #f02d00;
+}
+.CourseContent{
+  width: unset;
+  margin: 0vw;
 }
 .contentDer{
   display: none;
@@ -342,20 +566,83 @@ body {
   margin-right: 20px;
   white-space: nowrap;
 }
+.fontSizeCourseContent{
+  font-size: 6vw;
+    margin: 1vw 1vw 5vw 1vw;
+}
 .timeCurso{
   text-align: right;
   width: 47%;
 }
+.precio{
+  font-size: 8vw;
+  margin: 5vw;
+}
+.marcasImg {
+    width: auto;
+    margin: 3vw 2vw 3vw 2vw;
+    height: 12vw;
+}
+.textValor {
+    font-size: 6.7vw;
+    margin: 8vw 0vw 10vw 0vw;
+}
+.valorTxt {
+    margin: 2vw 3vw 2vw 3vw;
+    font-size: 5vw;
+}
+.valorCard {
+    margin: 4vw 8vw 5vw 8vw;
+    text-align: center;
+    display: grid;
+    width: 82vw;
+    background-color: #1473e600;
+    border-radius: 1vw;
+    border-style: solid;
+    border-color: #d4d4d4;
+    border-width: thin;
+    font-size: 1vw;
+}
+.ValorUsr{
+  font-size: 5vw;
+    margin: 1vw 1vw 3vw 1vw;
+}
+.ValorImg{
+  border-radius: 50%;
+  width: 33vw;
+  margin: 5vw 25vw 5vw 24vw;
+}
+.masValor {
+    font-size: 4vw;
+    color: blue;
+    padding: 3vw 1vw 8vw 1vw;
+}
+.subTitle4{
+  font-size: 3vw;
+  color: white;
+}
 .btnMas {
-    display: flex;
-    align-items: center;
-    background: #f9f9f9;
-    background-color: rgb(249, 249, 249);
-    border: solid 1px #e8e9eb;
-    cursor: pointer;
-    height: auto;
-    margin-top: 3px;
-    padding: 10px 30px 10px 22px;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  background-color: rgb(249, 249, 249);
+  border: solid 1px #e8e9eb;
+  cursor: pointer;
+  height: auto;
+  margin-top: 3px;
+  padding: 3vw 32vw 3vw 32vw;
+  font-size: 4vw;
+}
+ul{
+  display: none;
 }
 
+.suscripcion {
+    background-color: white;
+    width: 77vw;
+    height: 85vw;
+    margin: 0;
+    border-radius: 1%;
+    padding: 38vw 53vw 100vw 12vw;
+}
 }

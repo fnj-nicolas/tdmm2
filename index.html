@@ -8,6 +8,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/micss.css">
     <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Academy</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;700;900&display=swap" rel="stylesheet">
   </head>
@@ -15,7 +16,7 @@
     <!-- ((((1)))) -->
     <section class="contenedor1">
       <div class="header" >
-          <img src="img/adobe-A.svg" width="136px" height="40px">
+          <img class="logo" src="img/adobe-A.svg" width="136px" height="40px">
           <div class="right">
             <button class="btnInicio " >
               <span>Iniciar Sesión</span>
@@ -31,19 +32,14 @@
         <div class="card">
           <div class="contCard">
             <h1 class="cardFont">Tu primer clase gratis</h1>
-            <form class="marginForm">
+            <form id="enviar" class="marginForm">
               <label>Nombre Completo</label>
-              <input class="modMail">
-            </form>
-            <form class="marginForm">
+              <input class="modMail" id="ingresa-nombre" type="text" name="name" autofocus placeholder="Ingresá tu nombre">
               <label>Dirección de correo electrónico</label>
-              <input class="modMail">
+              <input class="modMail" id="ingresa-mail-2" type="text" autofocus placeholder="Ingresá correo electrónico" name="" value="">
+              <input class="btnContinuar" type="submit" id="btn-sub"  value="Ingresar">
             </form>
-            <button class="btnContinuar">
-              <span class="">
-                Continuar
-              </span>
-            </button>
+
           </div>
         </div>
       </div>
@@ -59,7 +55,7 @@
       </div>
     </section>
     <!-- ((((3)))) -->
-    <section class="contenedor2 row">
+    <section class="contenedor2">
       <h2 class="subTitle3">¡Inspírate!<br> Crea cualquier cosa que puedas imaginar.</h2>
       <div class="flexBox">
         <div class="">
@@ -69,167 +65,196 @@
           <img src="img/img2.jpg" class="marginImg">
         </div>
         <div class="">
-          <img src="img/img3.jpg" class="marginImg">
+          <img src="img/img3.jpg"  class="marginImg">
         </div>
       </div>
       <button class="btnVerMas">
-        <span class="">
-          Ver mas
-        </span>
+        <span class="">Ver mas</span>
       </button>
     </section>
     <!-- ((((4)))) -->
-    <section class="row">
+    <section class="row flexBox">
       <!-- header -->
-      <div >
-        <!-- Izquierda -->
-        <div class="">Course content</div>
-        <!-- Derecha -->
-        <div class="">
-          <span class="">55 lectures</span>
-          <span class="">08:22:50</span>
+      <div class="CourseContent">
+        <div class="fontSizeCourseContent">
+          <!-- Izquierda -->
+          <div class="tituloCourseCont">Course content</div>
+          <!-- Derecha -->
+          <div class="flexBox">
+            <span class="contentIzq"style="color:black;">55 lectures</span>
+            <span class="contentDer"style="color:black;">08:22:50</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Intoduccion al Diseño Grafico</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Teoría del color y familias tipográficas</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Archivos PDF Multipágina</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Diseño de identidad y logotipos</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Bocetado</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Imágenes y formatos</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Intoduccion al Diseño Grafico</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="flexContenido">
+          <!-- Izquierda Contenido -->
+          <div class="contentIzq">
+            <span class="plusIcon">+</span>
+            <span class="">Intoduccion al Diseño Grafico</span>
+          </div>
+          <!-- Derecha Contenido -->
+          <div class="contentDer">
+            <span class="">2 lectures</span>
+            <span class="timeCurso">08:11</span>
+          </div>
+        </div>
+        <div class="btnMas">
+          <span class="">1 more section</span>
         </div>
       </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Intoduccion al Diseño Grafico</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Teoría del color y familias tipográficas</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Archivos PDF Multipágina</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Diseño de identidad y logotipos</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Bocetado</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Imágenes y formatos</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Intoduccion al Diseño Grafico</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-      <div class="flexContenido">
-        <!-- Izquierda Contenido -->
-        <div class="contentIzq">
-          <span class="plusIcon">+</span>
-          <span class="">Intoduccion al Diseño Grafico</span>
-        </div>
-        <!-- Derecha Contenido -->
-        <div class="contentDer">
-          <span class="">2 lectures</span>
-          <span class="timeCurso">08:11</span>
-        </div>
-      </div>
-
-      <div class="btnMas">
-        <span class="">1 more section</span>
-      </div>
+      <div class="modComprar">
+        <p class="precio">AR$ 699 <span class="descuento">75% Dto.</span> <span class="descuentoP">AR$ 2499</span> </p>
+        <button class="btnComprar">
+          <span class="">
+            Comprar
+          </span>
+        </button>
+        <ul class="">
+         <li><i class="ico"data-feather="thumbs-up"></i> <span style="font-size: 1vw;">99% Valoraciones positivas</span></li>
+         <li><i class="ico"data-feather="user"></i> <span style="font-size: 1vw;">3955 alumnos</span></li>
+         <li><i class="ico"data-feather="film"></i> <span style="font-size: 1vw;">16 Lecciones</span></li>
+         <li><i class="ico"data-feather="layers"></i> <span style="font-size: 1vw;">2 Cursos</span></li>
+         <li><i class="ico"data-feather="smile"></i> <span style="font-size: 1vw;">Online y a tu ritmo</span></li>
+         <li><i class="ico"data-feather="smartphone"></i> <span style="font-size: 1vw;">Disponible desde la app</span></li>
+         <li><i class="ico"data-feather="volume-2"></i> <span style="font-size: 1vw;">Audio: Español</span></li>
+         <li><i class="ico"data-feather="headphones"></i> <span style="font-size: 1vw;">Español / Inglés / Portugués</span></li>
+         <li><i class="ico"data-feather="bar-chart-2"></i> <span style="font-size: 1vw;">Nivel : Inicial</span></li>
+      </ul>
     </section>
     <!-- ((((5)))) -->
     <section>
-      <div class="contenedor2">
+      <div class="contenedor2 subTitle4">
         <h2>Empresas que confian en nosotros</h2>
-        <div class="">
-          <img src="img/marca/marca1.png" height="=254px" width="354px">
-          <img src="img/marca/marca2.png" height="=254px" width="354px">
-          <img src="img/marca/marca3.png" height="=254px" width="354px">
-          <img src="img/marca/marca4.png" height="=254px" width="354px">
+        <div class="flexBox">
+          <img class="marcasImg" src="img/marca/marca1.png">
+          <img class="marcasImg" src="img/marca/marca2.png">
+          <img class="marcasImg" src="img/marca/marca3.png">
+          <img class="marcasImg" src="img/marca/marca4.png">
         </div>
       </div>
     </section>
     <!-- ((((6)))) -->
-    <section>
-      <h2>Valorciones</h2>
-      <div class="">
-        <img src="img/user/user1.jpg" height="=254px" width="354px" style="border-radius: 50%">
-        <span>@Juan</span>
-        <p>Ya tenía conocimientos anteriores, pero he aprendido a simplificar mi forma de trabajar y algunas herramientas que no conocía.</p>
+    <section style=" text-align: center;height: 34vw;">
+      <h2 class="textValor">Valorciones</h2>
+      <div class="flexBox">
+        <div class="valorCard">
+          <img class="ValorImg"src="img/user/user1.jpg">
+          <span  class="ValorUsr"style=" text-align:center;">@Juan</span>
+          <p class="valorTxt"> Ya tenía conocimientos anteriores, pero he aprendido a simplificar mi forma de trabajar y algunas herramientas que no conocía.</p>
+        </div>
+        <div class="valorCard">
+          <img class="ValorImg"src="img/user/user2.jpg">
+          <span class="ValorUsr"style=" text-align:center;">@Pedro</span>
+          <p class="valorTxt">Buenísimo el curso aprendí mucho mas que en mi universidad gracias a este curso de mr lemonade tengo nuevas expectativa de diseño pero note que hay un pequeño ...</p>
+        </div>
+        <div class="valorCard">
+          <img class="ValorImg"src="img/user/user3.jpg">
+          <span class="ValorUsr"style=" text-align:center;">@Marcos</span>
+          <p class="valorTxt">Un curso completo, bien explicado, buena calidad de audio y vídeo. Recomendado.</p>
+        </div>
       </div>
-      <div class="">
-        <img src="img/user/user2.jpg" height="=254px" width="354px" style="border-radius: 50%">
-        <span>@Pedro</span>
-        <p>Buenísimo el curso aprendí mucho mas que en mi universidad gracias a este curso de mr lemonade tengo nuevas expectativa de diseño pero note que hay un pequeño ...</p>
-      </div>
-      <div class="">
-        <img src="img/user/user3.jpg" height="=254px" width="354px" style="border-radius: 50%">
-        <span>@Marcos</span>
-        <p>Un curso completo, bien explicado, buena calidad de audio y vídeo. Recomendado.</p>
-      </div>
-      <span>mira todas las valoraciones ></span>
+      <span class="masValor">mira todas las valoraciones ></span>
     </section>
+
+    <!--mensaje-->
+
+
+    <div class="pantallaMensaje">
+      <article class="suscripcion">
+          <h3>Cumple con tus sueños, prepárate para crecer.<br>¿Qué esperas para elegir tu futuro?<br> <span id="nombre"></span></h3>
+          <p>Te enviamos un mail a <span id="correo"></span>, revisalo y obten tu primer clase gratis.<p>
+          <input class="btnRegresar" type="click" id="cerrar2"  value="Regresar">
+
+        </article>
+
     <!-- Optional JavaScript -->
     <script>
       feather.replace()
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
